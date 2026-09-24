@@ -1,5 +1,5 @@
 import React from "react";
-import UserList from "./UserList";
+import UserList from "../components/UserList";
 import { Outlet } from "react-router";
 
 const Users = () => {
