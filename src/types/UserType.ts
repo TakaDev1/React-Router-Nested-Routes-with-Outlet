@@ -1,6 +1,7 @@
-interface User {
+interface UserType {
+  id: number;
   name: string;
   age: number;
 }
 
-export type { User };
+export type { UserType };
