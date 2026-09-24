@@ -6,14 +6,16 @@ import UserDetail from "./pages/UserDetail";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <h1>React-Router-Nested-Routes-with-Outlet</h1>
-        <Routes>
-          <Route path="/users" element={<Users />}>
-            <Route path="/users/:id" element={<UserDetail />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <div className="min-h-screen bg-gray-800 flex flex-col justify-center">
+        <BrowserRouter>
+          <h1>React-Router-Nested-Routes-with-Outlet</h1>
+          <Routes>
+            <Route path="/users" element={<Users />}>
+              <Route path="/users/:id" element={<UserDetail />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }
